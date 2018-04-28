@@ -120,6 +120,6 @@ public class Sketch extends PApplet {
     @Override
     public void keyPressed(KeyEvent event) {
         if(event.getKeyCode() == java.awt.event.KeyEvent.VK_S)
-            tracer.save("C://Users//ANIS//Desktop//"+millis()+".jpeg");
+            tracer.save(System.getProperty("user.home")+"//Desktop//"+millis()+".jpeg");
     }
 }
